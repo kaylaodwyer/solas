@@ -1,0 +1,256 @@
+html {
+  font-family: "Marcellus", serif;
+  font-size: 12px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.background-video {
+  filter: brightness(75%);
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+main {
+  background-color: rgba(238, 238, 221, 0.92);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  font-size: 16px;
+  background-color: transparent;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 15px;
+  width: 300px;
+}
+
+.top-section {
+  text-align: center;
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.launching-p {
+  font-size: 14px;
+  padding: 10px;
+}
+
+.main-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  text-align: center;
+  place-items: center;
+}
+
+@media (max-width: 480px) {
+  .main-section {
+    grid-template-columns: 1fr;
+  }
+  .grid-image {
+    width: 95%;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 960px) {
+  .main-section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.grid-image {
+  height: 400px;
+}
+
+.grid-image:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.light-01:hover span {
+  display: none;
+}
+
+.light-01:hover::after {
+  content: "repurposed sculptural vessel in sand with rattan shade";
+}
+
+.light-02:hover span {
+  display: none;
+}
+
+.light-02:hover::after {
+  content: "repurposed sculptural vessel in sand with rattan shade";
+}
+
+.light-03:hover span {
+  display: none;
+}
+
+.light-03:hover::after {
+  content: "repurposed sculptural vessel in earth with rattan shade";
+}
+
+.life-01:hover span {
+  display: none;
+}
+
+.life-01:hover::after {
+  content: "repurposed sculptural vessel in earth";
+}
+
+.life-02:hover span {
+  display: none;
+}
+
+.life-02:hover::after {
+  content: "repurposed sculptural vessel in earth";
+}
+
+.life-03:hover span {
+  display: none;
+}
+
+.life-03:hover::after {
+  content: "repurposed sculptural vessel in sand";
+}
+
+.life-04:hover span {
+  display: none;
+}
+
+.life-04:hover::after {
+  content: "repurposed sculptural vessel in earth";
+}
+
+.life-05:hover span {
+  display: none;
+}
+
+.life-05:hover::after {
+  content: "repurposed sculptural vessel in earth";
+}
+
+.life-06:hover span {
+  display: none;
+}
+
+.life-06:hover::after {
+  content: "repurposed sculptural vessel in sand";
+}
+
+footer {
+  background-color: transparent;
+  text-align: center;
+}
+
+.button {
+  font-family: "Marcellus", serif;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 15px auto;
+  text-align: center;
+  width: 80px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  background-color: rgba(238, 238, 221, 0.6);
+}
+
+.modal-about,
+.modal-process,
+.modal-contact,
+.modal-connect {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  display: none;
+}
+
+.modal-message {
+  background-color: rgba(246, 246, 238, 1);
+  text-align: center;
+  line-height: 1.5;
+  font-size: 16px;
+  width: 400px;
+  padding: 40px 80px 40px 80px;
+  border-radius: 8px;
+}
+
+.home-video {
+  filter: brightness(75%);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  z-index: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+.video-button {
+  font-family: "Marcellus", serif;
+  font-size: 80px;
+  background-color: transparent;
+  border: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  z-index: 2;
+  cursor: pointer;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
